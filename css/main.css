@@ -96,26 +96,40 @@ textarea {
      align-items: center;
      flex-flow: row wrap;
  }
-header content-wrapper{
+ /* -------------------- Header Layout Styles -------------------- */
+ header {
+  padding: 15px 0;
+}
+header .content-wrapper{
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
 }
 header nav{
+  width: 60%;
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-flow: row wrap;
 }
 header nav ul{
+  width: 30%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+.header-divider{
+  width: 100%;
+}
 
 /* -------------------- Footer Layout Styles -------------------- */
 
+footer .content-wrapper {
+  width: 55%;
+  margin: 50px 0;
+}
 footer social-icons{
   display: flex;
   justify-content: center;
@@ -129,6 +143,9 @@ footer social p{
 
 /* -------------------- Main Page Layout Styles -------------------- */
 
+.content-wrapper{
+  width: 100%;
+}
 hero-area{
   display: flex;
   justify-content: center;
@@ -145,6 +162,9 @@ features{
   justify-content: center;
   align-items: center;
 }
+features article{
+  width: 100%;
+}
 features features-items{
   display: flex;
   justify-content: center;
@@ -156,6 +176,9 @@ reviews{
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+}
+reviews h3{
+  width: 90%;
 }
 
 /* -------------------- About Page Layout Styles -------------------- */
