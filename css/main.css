@@ -86,11 +86,75 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+/* General Styles */
+ 
+html {
+	font-size: 16px;
+}
+ 
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+  color: #e2e3ed;
+}
+ 
+ul, 
+ol {
+ text-transform: uppercase;
+ font-weight: 800;
+ list-style: none;
+}
+li{
+  padding: 0px 20px 0px 20px;
+}
+ 
+a {
+	color: #e2e3ed;
+  text-decoration: none;
+}
+h1{
+  margin: 0%;
+  font-size: 3em;
+  font-weight: 100;
+}
+ 
+h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.5em;
+  font-weight: 100;
+}
+ 
+h3, 
+h4 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5em;
+  font-weight: 100;
+}
+ 
+p {
+	
+} 
 
+img {
+ width: 100%;
+}
+ 
+figure {
+ 
+}
+ 
+address {
+ 
+}
+ 
+.content-wrapper {
+ 
+}
 
  /* -------------------- Base Header - Footer Styles -------------------- */
  header,
  footer {
+    margin: 0px;
      display: flex;
      justify-content: center;
      align-items: center;
@@ -98,14 +162,18 @@ textarea {
  }
  /* -------------------- Header Layout Styles -------------------- */
  header {
-  padding: 15px 0;
+  padding: 0px 0;
+  background-color: #202322;
 }
 header .content-wrapper{
-  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+}
+#logo{
+  width: 60%;
+  padding: 20px 20px 30px 20px;
 }
 header nav{
   width: 60%;
@@ -116,16 +184,154 @@ header nav{
 }
 header nav ul{
   width: 30%;
+  font-size: 1.5em;
+  font-weight: 800;
+  padding: 0px 0px 0px 0px;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
 }
 .header-divider{
   width: 100%;
+  border-top: solid #333 2px;
 }
+
+/* -------------------- Main Page Layout Styles -------------------- */
+
+.content-wrapper{
+  width: 100%;
+}
+.hero-area{
+  padding: 40px 20px 350px 20px;
+  background: url('../img/jake-melara-30679-unsplash.jpg') center no-repeat #333;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+aside{
+  background-color: #527158;
+  padding: 20px 20px 0px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+aside .form {
+  margin-top: 30px;
+  padding: 0px 20px 20px 20px;
+}
+
+.form-description{
+  font-style: italic;
+}
+ 
+input[type=text] {
+  box-sizing: border-box;
+  width: 100%;
+  color: #2a423a;
+  font-style: italic;
+  padding: 1em;
+}
+ 
+input[type=button] {
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 20px;
+  background-color: #2a423a;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.125em;
+  color: #e2e3ed;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
+}
+.features{
+  padding: 20px 20px 20px 20px;
+  background: url('../img/rawpixel-800820-unsplash1.jpg') center no-repeat #333;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.features article{
+  padding: 0px 100px 0px 100px;
+  text-align: center;
+}
+.features features-items{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+.reviews{
+  padding: 20px 20px 20px 20px;
+  background-color: #2a423a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+.reviews h3{
+  width: 50%;
+}
+.reviews p{
+  font-style: italic;
+  font-size: 1.1em;
+}
+
+/* -------------------- About Page Layout Styles -------------------- */
+
+.mission{
+  padding: 20px 20px 20px 20px;
+  background-color: #527158;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+.contact-section{
+  padding: 20px 20px 20px 20px;
+  background-color: #2a423a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+/* -------------------- FAQ Page Layout Styles -------------------- */
+
+.faq{
+  padding: 20px 20px 20px 20px;
+  background-color: #527158;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+.faq content-wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+.faq article{
+  padding: 20px 0px 0px 0px;
+}
+.faq p{
+  font-size: 1.1em;
+  font-style: italic;
+}
+
 
 /* -------------------- Footer Layout Styles -------------------- */
 
+footer{
+  background-color: #202322;
+  text-align: center;
+}
 footer .content-wrapper {
   width: 55%;
   margin: 50px 0;
@@ -139,76 +345,6 @@ footer social p{
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-/* -------------------- Main Page Layout Styles -------------------- */
-
-.content-wrapper{
-  width: 100%;
-}
-hero-area{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-aside{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
-}
-features{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-features article{
-  width: 100%;
-}
-features features-items{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
-}
-reviews{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
-}
-reviews h3{
-  width: 90%;
-}
-
-/* -------------------- About Page Layout Styles -------------------- */
-
-mission{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
-}
-contact-section{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
-}
-
-/* -------------------- FAQ Page Layout Styles -------------------- */
-
-faq{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
-}
-faq content-wrapper{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
 }
 
 
@@ -302,15 +438,11 @@ faq content-wrapper{
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+@media only screen and (min-width: 768px){
+  /*Tablet Styles Here*/
 }
-
-@media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
+@media only screen and (min-width:1200px){
+  /*Desktop Styles Here*/
 }
 
 /* ==========================================================================
