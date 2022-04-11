@@ -440,9 +440,166 @@ footer social p{
 
 @media only screen and (min-width: 768px){
   /*Tablet Styles Here*/
+  /* General styles */
+  .content-wrapper {
+    max-width: 640px;
+    margin: 10px 0;
 }
+
+/* Header */
+
+header {
+   justify-content: space-between;
+}
+
+header .content-wrapper {
+    padding:0px 20px 0px 20px ;
+    width: 100%;
+    justify-content: space-between;
+}
+#logo{
+  width: 45%;
+}
+header nav {
+    width: 45%;
+    
+}
+
+header nav ul {
+  justify-content:space-between;
+}
+
+.header-divider {
+    display: none;
+}
+
+/* Hero Area */
+
+/* Aside */
+aside .content-wrapper {
+    margin: 50px 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+aside .content-wrapper .form-description,
+aside .content-wrapper .form {        
+    width:45%;     
+    margin: 0;
+}
+
+/* Features */
+
+.features article {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.features .features-item-description {
+    width: 50%;
+}
+
+/* Reviews */
+.individual-review {
+  
+}
+
+.reviews article {
+    margin: 10px 10px 10px 10px; 
+    display: flex;
+    justify-content: space-around;   
+}
+
+.review-image{
+  width: 100%;
+  padding-right: 10px;
+  
+}
+
+.individual-review h3{
+  width: 50%;
+  
+}
+
+/* Footer */
+footer .content-wrapper {
+    width: 100%;
+    margin: 100px 0;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+}
+
+footer .contact {
+    margin-bottom: 0;
+    width: 50%;
+}
+footer .social{
+  width: 50%;
+}
+
+footer .copyright {
+    width: 100%;
+}
+/* ==========================================================================
+   About Page
+   ========================================================================== */
+ 
+   .mission-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.mission-content p {
+    width: 100%
+}
+
+.contact-section .content-wrapper h2 {
+    width: 100%;
+}
+
+.contact-content {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+.general-info{
+  width: 50%;
+}
+.chat {
+  width: 50%;
+}
+/* ==========================================================================
+   FAQ Page
+   ========================================================================== */
+   .faq .content-wrapper {
+    justify-content: space-between;
+}
+
+article .faq-question {
+    flex-basis: 40%;
+}
+
+.faq h2 {
+    width: 100%;
+}
+
+}
+
 @media only screen and (min-width:1200px){
   /*Desktop Styles Here*/
+  .features article{
+    width: 30%;
+  }
 }
 
 /* ==========================================================================
