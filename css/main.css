@@ -148,7 +148,7 @@ address {
 }
  
 .content-wrapper {
- 
+  width: 100%;
 }
 
  /* -------------------- Base Header - Footer Styles -------------------- */
@@ -198,9 +198,6 @@ header nav ul{
 
 /* -------------------- Main Page Layout Styles -------------------- */
 
-.content-wrapper{
-  width: 100%;
-}
 .hero-area{
   padding: 40px 20px 350px 20px;
   background: url('../img/jake-melara-30679-unsplash.jpg') center no-repeat #333;
@@ -255,31 +252,31 @@ input[type=button] {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-flow: row wrap;
+}
+.features h1{
+}
+.features .content-wrapper{
+  width: 50%;
+
 }
 .features article{
-  padding: 0px 100px 0px 100px;
   text-align: center;
 }
 .features features-items{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
 }
 .reviews{
   padding: 20px 20px 20px 20px;
   background-color: #2a423a;
   display: flex;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
   flex-flow: row wrap;
 }
-.reviews h3{
-  width: 50%;
-}
+
 .reviews p{
   font-style: italic;
-  font-size: 1.1em;
+  font-size: 1em;
 }
 
 /* -------------------- About Page Layout Styles -------------------- */
@@ -492,38 +489,41 @@ aside .content-wrapper .form {
 
 /* Features */
 
-.features article {
+.individual-features{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: wrap;
+
+}
+.features-items{
+   width: 50%;
+    margin:0;
+}
+
+
+/* Reviews */
+
+.reviews article{
+  width:100%;
+  margin: 0px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   flex-flow: row wrap;
 }
 
-.features .features-item-description {
-    width: 50%;
-}
-
-/* Reviews */
-.individual-review {
-  
-}
-
-.reviews article {
-    margin: 10px 10px 10px 10px; 
-    display: flex;
-    justify-content: space-around;   
-}
-
 .review-image{
-  width: 100%;
-  padding-right: 10px;
-  
+  width:50%;
+  padding: 10px 0px 100px 0px;
+  margin: 0;
+}
+.review-text{
+  width:45%;     
+  margin: 0;
 }
 
-.individual-review h3{
-  width: 50%;
-  
-}
 
 /* Footer */
 footer .content-wrapper {
@@ -597,8 +597,9 @@ article .faq-question {
 
 @media only screen and (min-width:1200px){
   /*Desktop Styles Here*/
-  .features article{
+  .features-items{
     width: 30%;
+    margin: 0;
   }
 }
 
