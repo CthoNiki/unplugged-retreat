@@ -144,11 +144,10 @@ figure {
 }
  
 address {
- 
+ text-style: normal;
 }
  
 .content-wrapper {
-  width: 100%;
 }
 
  /* -------------------- Base Header - Footer Styles -------------------- */
@@ -165,7 +164,7 @@ address {
   padding: 0px 0;
   background-color: #202322;
 }
-header .content-wrapper{
+header {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -173,6 +172,7 @@ header .content-wrapper{
 }
 #logo{
   width: 60%;
+  height: 80%;
   padding: 20px 20px 30px 20px;
 }
 header nav{
@@ -265,6 +265,7 @@ input[type=button] {
 }
 .features features-items{
 }
+
 .reviews{
   padding: 20px 20px 20px 20px;
   background-color: #2a423a;
@@ -304,11 +305,12 @@ input[type=button] {
   padding: 20px 20px 20px 20px;
   background-color: #527158;
   display: flex;
-  justify-content: center;
+  justify-content:flex-start;
   align-items: center;
   flex-flow: row wrap;
 }
-.faq content-wrapper{
+
+.faq .questions{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -492,7 +494,7 @@ aside .content-wrapper .form {
 .individual-features{
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     flex-flow: wrap;
 
@@ -532,16 +534,19 @@ footer .content-wrapper {
 }
 
 .footer-content {
+
   display: flex;
   justify-content: space-around;
-  align-items: center;
+  align-items: flex-start;
 
 }
 
 footer .contact {
+    text-transform: none;
     margin-bottom: 0;
     width: 50%;
 }
+
 footer .social{
   width: 50%;
 }
@@ -557,41 +562,57 @@ footer .copyright {
     display: flex;
     justify-content: space-around;
     align-items: center;
-}
+    }
 
-.mission-content p {
-    width: 100%
-}
+    .mission-content p {
+    width: 45%
+    }
 
-.contact-section .content-wrapper h2 {
+    .contact-sections {
     width: 100%;
-}
-
-.contact-content {
     display: flex;
     justify-content: center;
-    align-items:center;
-}
-.general-info{
-  width: 50%;
-}
-.chat {
-  width: 50%;
-}
+    align-items:flex-start;
+    padding: 0px 0px 50px 0px;
+    }
+
+    .contact-content {
+    
+    }
+
+    .general-info{
+    width: 50%;
+    }
+    .chat {
+    width: 50%;
+    }
 /* ==========================================================================
    FAQ Page
    ========================================================================== */
-   .faq .content-wrapper {
-    justify-content: space-between;
-}
+   .questions {
+    width:100%;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: wrap;
+    }
 
-article .faq-question {
-    flex-basis: 40%;
-}
-
-.faq h2 {
-    width: 100%;
-}
+    .faq-question {
+      width: 45%;
+      margin: 0;
+      padding: 0px 20px 0px 0px;
+      flex-basis: 40%;
+    }
+    .faq h1{
+      padding:0px 0px 0px 80px;
+    }
+    .faq h3{
+      width:90%;
+    }
+    .faq p {
+    width: 80%;
+    }
 
 }
 
