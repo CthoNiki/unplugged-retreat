@@ -568,6 +568,10 @@
     header nav ul {
       justify-content: space-between;
     }
+
+    header nav ul li{
+      padding-right: 15px;
+    }
   
     .header-divider {
       display: none;
@@ -679,7 +683,9 @@
     .mission-content p {
       width: 45%;
     }
-  
+    .map figure{
+      padding-bottom: 50%;
+    }
     .contact-section .content-wrapper h2 {
       width: 80%;
     }
@@ -794,7 +800,9 @@
         width: 95%;
         font-size: 3em;
     }
-  
+    .map figure{
+      padding-bottom: 30%;
+    }
     .contact-content h4 {
       font-size: 1.875em;
     }
